@@ -1,4 +1,4 @@
-import random
+from random import randint
 
 
 print("---------------------- Welcome to Guess the Number! ---------------------")
@@ -7,12 +7,12 @@ print("-------------------------------------------------------------------------
 
 x = int(input("The range of guessing will be from 1 to? "))
 print(
-    "\n---------The number you have to guess is in the range of 1 to {}---------\n".format(
+    "\n--------- The number you have to guess is in the range of 1 to {} ---------\n".format(
         x
     )
 )
 
-number_to_guess = random.randint(1, x)
+number_to_guess = randint(1, x)
 
 prediction = 0
 
